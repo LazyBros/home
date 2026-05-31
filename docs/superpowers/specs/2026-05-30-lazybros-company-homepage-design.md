@@ -159,7 +159,7 @@ The app-specific folder model must support separate terms for each app. For `주
 
 Brand:
 
-- Logo mark: the LazyBros glasses image from `design-components-all/Lazybros_image`, reused for the header mark, browser tab icon, and mobile home screen icons.
+- Logo mark: `KakaoTalk_Photo_2026-05-31-14-16-55 004.png` from `design-components-all/Lazybros_image`, reused for the header mark, browser tab icon, and mobile home screen icons.
 - Text: `LazyBros Company`
 
 Navigation:
@@ -474,6 +474,6 @@ When implementation begins, avoid modifying unrelated repository files. Preserve
 
 The approved design is clear enough to implement with these defaults:
 
-- Use the LazyBros glasses image for the header logo, favicon, and mobile home screen icons.
+- Use `KakaoTalk_Photo_2026-05-31-14-16-55 004.png` for the header logo, favicon, and mobile home screen icons.
 - Do not publish a legal `terms.html` page until app-specific terms text is provided and approved.
 - Copy the design-system paybooc font files into the homepage repository unless the file size causes a practical problem during implementation.
