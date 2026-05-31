@@ -56,6 +56,10 @@ require_text "assets/css/styles.css" "--lb-card: #e9e9e9;"
 require_text "assets/css/styles.css" "--lb-orange: #ff7518;"
 require_text "assets/css/styles.css" "@font-face"
 require_text "assets/css/styles.css" "@media (max-width: 760px)"
+require_text "assets/css/styles.css" "overflow-wrap: anywhere;"
+require_text "assets/css/styles.css" "min-width: 0;"
+require_text "assets/css/styles.css" "font-size: clamp("
+require_text "assets/css/styles.css" "width: calc(100% - 32px);"
 
 require_text "lazyparking/privacy_policy.html" '<html lang="ko">'
 require_text "lazyparking/privacy_policy.html" "개인정보처리방침"
