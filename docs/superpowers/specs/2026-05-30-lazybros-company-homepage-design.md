@@ -165,9 +165,10 @@ Brand:
 Navigation:
 
 - Company
-- Apps
 - Policies
 - Contact
+
+The shared header stays fixed at the top while scrolling on both the homepage and app policy pages. Anchor links include enough scroll offset so section titles remain visible below the header.
 
 Behavior:
 
@@ -249,6 +250,12 @@ Scalable app directory:
 - Add a compact app directory beside or below the featured card.
 - Include app search, state/category filters, visible app count, app status, category, update date, and direct policy actions.
 - For `주차기록`, expose `개인정보`, `권한 안내`, and `광고 안내` links from the directory row.
+
+### Contact
+
+- Show `LazyBros Company` with the adjacent tagline `Lazy doesn't mean Stupid`.
+- Align the tagline so its right edge visually tracks with the contact description line on desktop.
+- Keep `lazybroscompany@gmail.com` as the primary mail action.
 
 ### Footer
 

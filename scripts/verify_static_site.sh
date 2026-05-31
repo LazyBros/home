@@ -84,9 +84,13 @@ require_text "index.html" "광고 안내"
 require_text "index.html" "filterPolicyApps"
 require_text "index.html" "lazyparking/privacy_policy.html"
 require_text "index.html" "LazyBros Company | lazybroscompany@gmail.com"
+require_text "index.html" "Lazy doesn't mean Stupid"
+require_text "index.html" 'class="contact-copy"'
+require_text "index.html" 'class="contact-title-row"'
 require_text "index.html" "Copyright(c) 2026 LazyBros company All rights reserved"
 require_text "index.html" 'id="company"'
 require_text "index.html" 'id="policies"'
+require_absent "index.html" 'href="#apps"'
 require_absent "index.html" 'class="footer-links"'
 require_absent "index.html" 'href="app-ads.txt"'
 require_absent "index.html" "terms.html"
@@ -94,6 +98,7 @@ require_absent "index.html" "terms.html"
 require_text "assets/css/styles.css" "--lb-bg: #ffffff;"
 require_text "assets/css/styles.css" "--lb-card: #e9e9e9;"
 require_text "assets/css/styles.css" "--lb-orange: #ff7518;"
+require_text "assets/css/styles.css" "--lb-header-height: 72px;"
 require_text "assets/css/styles.css" "@font-face"
 require_text "assets/css/styles.css" 'font-family: "Paybooc";'
 require_text "assets/css/styles.css" "paybooc-Light.ttf"
@@ -107,6 +112,11 @@ require_text "assets/css/styles.css" "overflow-wrap: anywhere;"
 require_text "assets/css/styles.css" "min-width: 0;"
 require_text "assets/css/styles.css" "font-size: clamp("
 require_text "assets/css/styles.css" "width: calc(100% - 32px);"
+require_text "assets/css/styles.css" "scroll-padding-top: calc(var(--lb-header-height) + 24px);"
+require_text "assets/css/styles.css" "scroll-margin-top: calc(var(--lb-header-height) + 24px);"
+require_text "assets/css/styles.css" ".site-header"
+require_text "assets/css/styles.css" "position: sticky;"
+require_text "assets/css/styles.css" "z-index: 100;"
 require_text "assets/css/styles.css" ".brand-mark img"
 require_absent "assets/css/styles.css" ".hero-logo"
 require_text "assets/css/styles.css" "margin: 0 0 18px;"
@@ -115,6 +125,8 @@ require_text "assets/css/styles.css" ".policy-toolbar"
 require_text "assets/css/styles.css" ".policy-app-row"
 require_text "assets/css/styles.css" ".policy-actions"
 require_text "assets/css/styles.css" ".policy-empty"
+require_text "assets/css/styles.css" ".contact-tagline"
+require_text "assets/css/styles.css" "justify-content: space-between;"
 
 require_text "manifest.webmanifest" '"name": "LazyBros Company"'
 require_text "manifest.webmanifest" '"icons"'
