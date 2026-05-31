@@ -45,6 +45,7 @@ require_file "assets/fonts/paybooc-Medium.ttf"
 require_file "assets/fonts/paybooc-Bold.ttf"
 require_file "assets/fonts/paybooc-ExtraBold.ttf"
 require_file "assets/icons/lazybros-glasses-logo.png"
+require_file "assets/icons/lazybros-policy-logo.png"
 require_file "assets/icons/favicon-32.png"
 require_file "assets/icons/apple-touch-icon.png"
 require_file "assets/icons/icon-192.png"
@@ -56,6 +57,7 @@ require_file "app-ads.txt"
 require_file "google04098259f4b4bb7a.html"
 
 require_sha256 "assets/icons/lazybros-glasses-logo.png" "e10dbcedca8422ee21058ff66e3ce8fa92fb64f24336057366af0222e84e303c"
+require_sha256 "assets/icons/lazybros-policy-logo.png" "4af5fdcdfef6ee4547220bbb9b8dd4976243b4a12d54d1ec085504c95b5ee7ce"
 
 require_text "index.html" '<html lang="ko">'
 require_text "index.html" "LazyBros Company"
@@ -66,6 +68,7 @@ require_text "index.html" "assets/icons/favicon-32.png?v=004"
 require_text "index.html" "assets/icons/apple-touch-icon.png?v=004"
 require_text "index.html" "manifest.webmanifest?v=004"
 require_text "index.html" "assets/icons/lazybros-glasses-logo.png?v=004"
+require_text "index.html" "assets/icons/lazybros-policy-logo.png?v=003"
 require_absent "index.html" 'class="hero-logo"'
 require_text "index.html" "생활 속 작은 불편을 가볍고 똑똑한 앱으로 바꿉니다."
 require_text "index.html" "주차기록"
