@@ -69,6 +69,16 @@ require_text "index.html" "assets/icons/lazybros-glasses-logo.png?v=003"
 require_text "index.html" 'class="hero-logo"'
 require_text "index.html" "생활 속 작은 불편을 가볍고 똑똑한 앱으로 바꿉니다."
 require_text "index.html" "주차기록"
+require_text "index.html" 'class="policy-directory"'
+require_text "index.html" 'data-policy-search'
+require_text "index.html" 'data-policy-filter="all"'
+require_text "index.html" 'data-policy-app'
+require_text "index.html" 'data-policy-count'
+require_text "index.html" 'data-policy-empty'
+require_text "index.html" "전체 앱 정책 목록"
+require_text "index.html" "최근 업데이트: 2025.05.18"
+require_text "index.html" "광고 안내"
+require_text "index.html" "filterPolicyApps"
 require_text "index.html" "lazyparking/privacy_policy.html"
 require_text "index.html" "LazyBros Company | lazybroscompany@gmail.com"
 require_text "index.html" "Copyright(c) 2026 LazyBros company All rights reserved"
@@ -96,6 +106,12 @@ require_text "assets/css/styles.css" "width: calc(100% - 32px);"
 require_text "assets/css/styles.css" ".brand-mark img"
 require_text "assets/css/styles.css" ".hero-logo"
 require_text "assets/css/styles.css" ".hero-logo img"
+require_text "assets/css/styles.css" "margin: 0 0 18px;"
+require_text "assets/css/styles.css" ".policy-directory"
+require_text "assets/css/styles.css" ".policy-toolbar"
+require_text "assets/css/styles.css" ".policy-app-row"
+require_text "assets/css/styles.css" ".policy-actions"
+require_text "assets/css/styles.css" ".policy-empty"
 
 require_text "manifest.webmanifest" '"name": "LazyBros Company"'
 require_text "manifest.webmanifest" '"icons"'
