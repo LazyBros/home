@@ -155,15 +155,20 @@ button:focus-visible {
 }
 
 .brand-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: var(--lb-radius-sm);
-  background: var(--lb-orange);
-  color: #ffffff;
-  display: grid;
-  place-items: center;
-  font-size: 16px;
-  font-weight: 800;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #444444;
+  display: block;
+  flex: 0 0 auto;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .nav-links {
@@ -197,6 +202,22 @@ main {
   gap: 40px;
   align-items: center;
   padding: 56px 0 48px;
+}
+
+.hero-logo {
+  width: 96px;
+  height: 96px;
+  margin: 0 0 22px;
+  border-radius: 24px;
+  background: var(--lb-card);
+  overflow: hidden;
+  box-shadow: var(--lb-shadow);
+}
+
+.hero-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .eyebrow {

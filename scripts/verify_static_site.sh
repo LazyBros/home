@@ -27,19 +27,46 @@ require_absent() {
   fi
 }
 
+require_sha256() {
+  local path="$1"
+  local expected="$2"
+  local actual
+  actual="$(shasum -a 256 "$path" | awk '{print $1}')"
+  if [[ "$actual" != "$expected" ]]; then
+    echo "Unexpected sha256 for $path: $actual" >&2
+    exit 1
+  fi
+}
+
 require_file "index.html"
 require_file "assets/css/styles.css"
 require_file "assets/fonts/paybooc-Light.ttf"
 require_file "assets/fonts/paybooc-Medium.ttf"
 require_file "assets/fonts/paybooc-Bold.ttf"
 require_file "assets/fonts/paybooc-ExtraBold.ttf"
+require_file "assets/icons/lazybros-glasses-logo.png"
+require_file "assets/icons/favicon-32.png"
+require_file "assets/icons/apple-touch-icon.png"
+require_file "assets/icons/icon-192.png"
+require_file "assets/icons/icon-512.png"
+require_file "manifest.webmanifest"
 require_file "lazyparking/privacy_policy.txt"
 require_file "lazyparking/privacy_policy.html"
 require_file "app-ads.txt"
 require_file "google04098259f4b4bb7a.html"
 
+require_sha256 "assets/icons/lazybros-glasses-logo.png" "4af5fdcdfef6ee4547220bbb9b8dd4976243b4a12d54d1ec085504c95b5ee7ce"
+
 require_text "index.html" '<html lang="ko">'
 require_text "index.html" "LazyBros Company"
+require_text "index.html" 'rel="icon"'
+require_text "index.html" 'rel="apple-touch-icon"'
+require_text "index.html" 'rel="manifest"'
+require_text "index.html" "assets/icons/favicon-32.png?v=003"
+require_text "index.html" "assets/icons/apple-touch-icon.png?v=003"
+require_text "index.html" "manifest.webmanifest?v=003"
+require_text "index.html" "assets/icons/lazybros-glasses-logo.png?v=003"
+require_text "index.html" 'class="hero-logo"'
 require_text "index.html" "생활 속 작은 불편을 가볍고 똑똑한 앱으로 바꿉니다."
 require_text "index.html" "주차기록"
 require_text "index.html" "lazyparking/privacy_policy.html"
@@ -66,8 +93,23 @@ require_text "assets/css/styles.css" "overflow-wrap: anywhere;"
 require_text "assets/css/styles.css" "min-width: 0;"
 require_text "assets/css/styles.css" "font-size: clamp("
 require_text "assets/css/styles.css" "width: calc(100% - 32px);"
+require_text "assets/css/styles.css" ".brand-mark img"
+require_text "assets/css/styles.css" ".hero-logo"
+require_text "assets/css/styles.css" ".hero-logo img"
+
+require_text "manifest.webmanifest" '"name": "LazyBros Company"'
+require_text "manifest.webmanifest" '"icons"'
+require_text "manifest.webmanifest" "assets/icons/icon-192.png?v=003"
+require_text "manifest.webmanifest" "assets/icons/icon-512.png?v=003"
 
 require_text "lazyparking/privacy_policy.html" '<html lang="ko">'
+require_text "lazyparking/privacy_policy.html" 'rel="icon"'
+require_text "lazyparking/privacy_policy.html" 'rel="apple-touch-icon"'
+require_text "lazyparking/privacy_policy.html" 'rel="manifest"'
+require_text "lazyparking/privacy_policy.html" "../assets/icons/favicon-32.png?v=003"
+require_text "lazyparking/privacy_policy.html" "../assets/icons/apple-touch-icon.png?v=003"
+require_text "lazyparking/privacy_policy.html" "../manifest.webmanifest?v=003"
+require_text "lazyparking/privacy_policy.html" "../assets/icons/lazybros-glasses-logo.png?v=003"
 require_text "lazyparking/privacy_policy.html" "개인정보처리방침"
 require_text "lazyparking/privacy_policy.html" "시행일: 2025년 5월 18일"
 require_text "lazyparking/privacy_policy.html" "위치 정보 (GPS)"

@@ -159,7 +159,7 @@ The app-specific folder model must support separate terms for each app. For `주
 
 Brand:
 
-- Logo mark: a simple orange square/rounded mark with `L` or a lightweight LazyBros wordmark.
+- Logo mark: the LazyBros glasses image from `design-components-all/Lazybros_image`, reused for the header mark, browser tab icon, and mobile home screen icons.
 - Text: `LazyBros Company`
 
 Navigation:
@@ -478,6 +478,6 @@ When implementation begins, avoid modifying unrelated repository files. Preserve
 
 The approved design is clear enough to implement with these defaults:
 
-- Use a simple orange `L` mark for version 1.
+- Use the LazyBros glasses image for the header logo, favicon, and mobile home screen icons.
 - Do not publish a legal `terms.html` page until app-specific terms text is provided and approved.
 - Copy the design-system paybooc font files into the homepage repository unless the file size causes a practical problem during implementation.
