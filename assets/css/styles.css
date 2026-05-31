@@ -1,43 +1,41 @@
 @font-face {
-  font-family: "LazyText";
-  src: url("../fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype-variations"),
-       url("../fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype");
-  font-weight: 200 900;
+  font-family: "Paybooc";
+  src: url("../fonts/paybooc-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
-  unicode-range: U+0020-007E, U+00A0-024F, U+2000-206F, U+20A0-20CF, U+2100-218F;
 }
 
 @font-face {
-  font-family: "LazyText";
-  src: url("../fonts/NanumSquare_acL.ttf") format("truetype");
-  font-weight: 300;
-  font-display: swap;
-  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+AC00-D7A3;
-}
-
-@font-face {
-  font-family: "LazyText";
-  src: url("../fonts/NanumSquare_acR.ttf") format("truetype");
+  font-family: "Paybooc";
+  src: url("../fonts/paybooc-Medium.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
-  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+AC00-D7A3;
 }
 
 @font-face {
-  font-family: "LazyText";
-  src: url("../fonts/NanumSquare_acB.ttf") format("truetype");
+  font-family: "Paybooc";
+  src: url("../fonts/paybooc-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paybooc";
+  src: url("../fonts/paybooc-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
   font-display: swap;
-  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+AC00-D7A3;
 }
 
 @font-face {
-  font-family: "LazyText";
-  src: url("../fonts/NanumSquare_acEB.ttf") format("truetype");
+  font-family: "Paybooc";
+  src: url("../fonts/paybooc-ExtraBold.ttf") format("truetype");
   font-weight: 800;
+  font-style: normal;
   font-display: swap;
-  unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+AC00-D7A3;
 }
 
 :root {
@@ -77,7 +75,7 @@ body {
   margin: 0;
   background: var(--lb-bg);
   color: var(--lb-text);
-  font-family: "LazyText", "SF Pro Display", -apple-system, "Helvetica Neue", sans-serif;
+  font-family: "Paybooc", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
   font-size: 14px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;

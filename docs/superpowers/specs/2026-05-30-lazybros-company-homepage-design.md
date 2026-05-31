@@ -328,11 +328,10 @@ Recommended files:
 
 - `index.html`
 - `assets/css/styles.css`
-- `assets/fonts/NanumSquare_acL.ttf`
-- `assets/fonts/NanumSquare_acR.ttf`
-- `assets/fonts/NanumSquare_acB.ttf`
-- `assets/fonts/NanumSquare_acEB.ttf`
-- `assets/fonts/SourceCodePro-VariableFont_wght.ttf`
+- `assets/fonts/paybooc-Light.ttf`
+- `assets/fonts/paybooc-Medium.ttf`
+- `assets/fonts/paybooc-Bold.ttf`
+- `assets/fonts/paybooc-ExtraBold.ttf`
 - `lazyparking/privacy_policy.html`
 
 The site does not need a build step for version 1. A no-build static setup is easier to maintain and fits the current repository, which already contains static files.
@@ -357,10 +356,12 @@ Do not hardcode random colors outside the approved token set. The final CSS may 
 
 ### Font setup
 
-Use `LazyText` font-face behavior from the design system:
+Use `Paybooc` font-face behavior from the design system across the homepage and app policy pages:
 
-- Korean: NanumSquare_ac weights 300, 400, 700, 800.
-- English/numbers/symbols: Source Code Pro variable font.
+- Light: weight 300.
+- Medium: weights 400 and 500.
+- Bold: weight 700.
+- ExtraBold: weight 800.
 
 If font file size or licensing becomes a concern, fall back to system fonts for version 1. However, the preferred implementation is to copy the existing design-system font files into `assets/fonts/`.
 
@@ -479,4 +480,4 @@ The approved design is clear enough to implement with these defaults:
 
 - Use a simple orange `L` mark for version 1.
 - Do not publish a legal `terms.html` page until app-specific terms text is provided and approved.
-- Copy the design-system font files into the homepage repository unless the file size causes a practical problem during implementation.
+- Copy the design-system paybooc font files into the homepage repository unless the file size causes a practical problem during implementation.
