@@ -87,7 +87,8 @@ require_text "index.html" "LazyBros Company | lazybroscompany@gmail.com"
 require_text "index.html" "Copyright(c) 2026 LazyBros company All rights reserved"
 require_text "index.html" 'id="company"'
 require_text "index.html" 'id="policies"'
-require_text "index.html" 'href="app-ads.txt"'
+require_absent "index.html" 'class="footer-links"'
+require_absent "index.html" 'href="app-ads.txt"'
 require_absent "index.html" "terms.html"
 
 require_text "assets/css/styles.css" "--lb-bg: #ffffff;"

@@ -257,10 +257,7 @@ Required content:
 - `LazyBros Company | lazybroscompany@gmail.com`
 - `Copyright(c) 2026 LazyBros company All rights reserved`
 
-Footer secondary links:
-
-- `주차기록 개인정보처리방침`
-- `app-ads.txt`
+No secondary footer links are shown. App policy and `app-ads.txt` access remain available from their purpose-built sections and direct file paths.
 
 ## 8. 주차기록 Privacy Policy Content Requirements
 

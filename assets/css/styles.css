@@ -764,16 +764,6 @@ main {
   font-size: 12px;
 }
 
-.footer-links {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.footer-links a:hover {
-  color: var(--lb-orange-dim);
-}
-
 .legal-page {
   width: calc(100% - 48px);
   max-width: 980px;
