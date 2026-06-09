@@ -70,15 +70,18 @@ require_text "index.html" "assets/icons/favicon-32.png?v=004"
 require_text "index.html" "assets/icons/apple-touch-icon.png?v=004"
 require_text "index.html" "manifest.webmanifest?v=004"
 require_text "index.html" "assets/icons/lazybros-glasses-logo.png?v=004"
-require_text "index.html" "assets/icons/lazybros-policy-logo.png?v=003"
 require_absent "index.html" 'class="hero-logo"'
 require_text "index.html" "생활 속 작은 불편을 가볍고 똑똑한 앱으로 바꿉니다."
+require_text "index.html" "LazyBros Apps"
+require_text "index.html" "작은 생활 도구 앱을 만들고 운영합니다."
+require_text "index.html" 'class="hero-app-list"'
+require_text "index.html" 'class="hero-app-card"'
+require_text "index.html" "각 앱의 역할만 짧게 소개하고"
 require_text "index.html" "주차기록"
 require_text "index.html" "모기퇴치"
 require_text "index.html" "고주파 음파"
 require_text "index.html" 'class="policy-directory"'
 require_text "index.html" 'data-policy-search'
-require_text "index.html" 'data-policy-filter="all"'
 require_text "index.html" 'data-policy-app'
 require_text "index.html" 'data-policy-count'
 require_text "index.html" 'data-policy-empty'
@@ -88,6 +91,13 @@ require_text "index.html" "2개 앱"
 require_text "index.html" "2026.06.08"
 require_text "index.html" "광고 안내"
 require_text "index.html" "filterPolicyApps"
+require_absent "index.html" 'class="policy-feature"'
+require_absent "index.html" 'class="featured-app-name"'
+require_absent "index.html" 'class="policy-filter-group"'
+require_absent "index.html" 'data-policy-filter'
+require_absent "index.html" 'class="policy-app-status"'
+require_absent "index.html" "운영 중"
+require_absent "index.html" "대표 앱"
 require_text "index.html" "lazyparking/privacy_policy.html"
 require_text "index.html" "lazymosquito/privacy_policy.html"
 require_text "index.html" "lazymosquito/privacy_policy.html#terms"
@@ -130,12 +140,18 @@ require_text "assets/css/styles.css" "position: sticky;"
 require_text "assets/css/styles.css" "z-index: 100;"
 require_text "assets/css/styles.css" ".brand-mark img"
 require_absent "assets/css/styles.css" ".hero-logo"
-require_text "assets/css/styles.css" "margin: 0 0 18px;"
 require_text "assets/css/styles.css" ".policy-directory"
+require_text "assets/css/styles.css" "background: var(--lb-card);"
+require_absent "assets/css/styles.css" "linear-gradient(135deg, var(--lb-orange)"
 require_text "assets/css/styles.css" ".policy-toolbar"
 require_text "assets/css/styles.css" ".policy-app-row"
 require_text "assets/css/styles.css" ".policy-actions"
 require_text "assets/css/styles.css" ".policy-empty"
+require_absent "assets/css/styles.css" ".policy-feature"
+require_absent "assets/css/styles.css" ".policy-filter"
+require_absent "assets/css/styles.css" ".policy-app-status"
+require_text "assets/css/styles.css" ".hero-app-list"
+require_text "assets/css/styles.css" ".hero-app-card"
 require_text "assets/css/styles.css" ".contact-tagline"
 require_text "assets/css/styles.css" "justify-content: space-between;"
 

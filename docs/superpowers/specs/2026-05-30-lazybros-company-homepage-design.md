@@ -200,21 +200,21 @@ Secondary CTA:
 - `회사 소개`
 - Anchor target: `#company`
 
-### Hero app preview
+### Hero app overview
 
 Purpose:
 
-- Show `주차기록` immediately as a real app and policy example.
+- Show the current LazyBros app lineup without making one app look like the only or primary product.
+- Keep this area focused on app descriptions only; detailed policy links stay in the app policy center.
 
 Content:
 
-- App name: `주차기록`
-- Status badge: `Active`
-- Description: 위치 기반 주차 정보와 사진 기록을 기기 내에 안전하게 저장하는 앱
-- Policy bullets:
-  - 개인정보처리방침: 위치 / 카메라 / 사진 권한 안내
-  - 광고 안내: Google AdMob 및 맞춤형 광고 거부
-  - 보관 원칙: 회사 서버 전송 없음, 앱 삭제 시 함께 삭제
+- Panel label: `LazyBros Apps`
+- Summary title: `작은 생활 도구 앱을 만들고 운영합니다.`
+- Supporting note: each app is introduced briefly, while app-specific privacy policies and terms remain managed in the policy center.
+- App cards:
+  - `주차기록`: 주차 위치, 사진, 메모를 기기 안에 기록하고 나중에 다시 찾기 쉽게 돕는 앱입니다.
+  - `모기퇴치`: 고주파 음파, 주파수 프리셋, 파형 선택, 스윕 모드와 타이머를 제공하는 모기 퇴치 보조 앱입니다.
 
 ### Company section
 
@@ -237,20 +237,16 @@ Purpose:
 
 - Be the authoritative index for all LazyBros app policy documents.
 
-Initial featured app card:
+Directory layout:
 
-- App: `주차기록`
-- Slug: `lazyparking`
-- Summary: 위치 기반 주차 정보 서비스, 사진 촬영 및 갤러리 불러오기, AdMob 광고 안내 포함
-- Main actions: `개인정보처리방침`, `권한 안내`
-- Target: `/home/lazyparking/privacy_policy.html`
-
-Scalable app directory:
-
-- Keep the orange featured app card for the primary or latest app.
-- Add a compact app directory beside or below the featured card.
-- Include app search, state/category filters, visible app count, app status, category, update date, and direct policy actions.
+- Use one full-width directory panel instead of a separate featured-app card.
+- Match the site tone by using gray as the primary panel color and orange as the secondary accent color.
+- Keep the policy center neutral between apps so `주차기록`, `모기퇴치`, and future apps appear as equal entries.
+- Include app search, visible app count, latest update date, app category, update date, and direct policy actions.
+- Do not show an `운영 중` statistic, filter, or row badge in the directory.
+- Do not show the intermediate `전체`, `기록`, `도구`, `광고` filter chips; search is the only directory control.
 - For `주차기록`, expose `개인정보`, `권한 안내`, and `광고 안내` links from the directory row.
+- For `모기퇴치`, expose `약관`, `개인정보`, `권한 안내`, and `데이터 삭제` links from the directory row.
 
 ### Contact
 

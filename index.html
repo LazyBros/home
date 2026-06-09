@@ -43,24 +43,52 @@
         </div>
       </div>
 
-      <aside class="hero-panel" aria-labelledby="featured-app-title">
+      <aside class="hero-panel" aria-labelledby="apps-title">
         <div class="panel-top">
-          <p class="status-pill"><span aria-hidden="true"></span>Policy hub</p>
-          <span class="updated">Updated 2026</span>
+          <p class="status-pill"><span aria-hidden="true"></span>LazyBros Apps</p>
+          <span class="updated">2 active apps</span>
         </div>
-        <article class="app-preview" id="apps">
-          <div class="card-title-row">
-            <h2 id="featured-app-title">주차기록</h2>
-            <span class="app-status">Active</span>
-          </div>
-          <p>위치 기반 주차 정보와 사진 기록을 기기 내에 안전하게 저장하는 앱</p>
-          <ul class="feature-list">
-            <li>개인정보처리방침 · 위치 / 카메라 / 사진 권한 안내</li>
-            <li>광고 안내 · Google AdMob 및 맞춤형 광고 거부</li>
-            <li>보관 원칙 · 회사 서버 전송 없음, 앱 삭제 시 함께 삭제</li>
-          </ul>
-          <a class="button primary" href="lazyparking/privacy_policy.html">주차기록 개인정보처리방침</a>
-        </article>
+        <div class="hero-app-overview" id="apps">
+          <h2 id="apps-title">작은 생활 도구 앱을 만들고 운영합니다.</h2>
+          <p>
+            각 앱의 역할만 짧게 소개하고, 개인정보처리방침과 약관은 아래 정책 센터에서 앱별로 관리합니다.
+          </p>
+        </div>
+        <div class="hero-app-list" aria-label="LazyBros 운영 앱">
+          <article class="hero-app-card">
+            <div class="hero-app-card-head">
+              <div>
+                <strong>주차기록</strong>
+                <span>Parking record app</span>
+              </div>
+              <em>생활 · 기록</em>
+            </div>
+            <p>주차 위치, 사진, 메모를 기기 안에 기록하고 나중에 다시 찾기 쉽게 돕는 앱입니다.</p>
+            <div class="hero-app-tags" aria-label="주차기록 키워드">
+              <span>위치 기록</span>
+              <span>사진 기록</span>
+              <span>기기 내 저장</span>
+            </div>
+          </article>
+          <article class="hero-app-card">
+            <div class="hero-app-card-head">
+              <div>
+                <strong>모기퇴치</strong>
+                <span>High-frequency sound utility</span>
+              </div>
+              <em>생활 · 도구</em>
+            </div>
+            <p>고주파 음파, 주파수 프리셋, 파형 선택, 스윕 모드와 타이머를 제공하는 모기 퇴치 보조 앱입니다.</p>
+            <div class="hero-app-tags" aria-label="모기퇴치 키워드">
+              <span>고주파 음파</span>
+              <span>스윕 모드</span>
+              <span>슬립 타이머</span>
+            </div>
+          </article>
+        </div>
+        <p class="hero-app-note">
+          약관, 개인정보, 권한, 데이터 삭제 링크는 하단 정책 센터에서 확인할 수 있습니다.
+        </p>
       </aside>
     </section>
 
@@ -103,24 +131,6 @@
       </div>
 
       <div class="policy-overview">
-        <article class="policy-feature">
-          <div class="policy-feature-main">
-            <div class="policy-feature-logo" aria-hidden="true">
-              <img src="assets/icons/lazybros-policy-logo.png?v=003" alt="">
-            </div>
-            <p class="status-pill"><span aria-hidden="true"></span>대표 앱</p>
-            <strong class="featured-app-name">주차기록</strong>
-            <h3>주차 정보를 기록하고 다시 찾기 쉽게 돕는 앱</h3>
-            <p>
-              위치 기반 주차 정보 서비스, 사진 촬영 및 갤러리 불러오기, Google AdMob 광고 안내를 포함합니다.
-            </p>
-          </div>
-          <div class="policy-feature-actions">
-            <a class="button" href="lazyparking/privacy_policy.html">개인정보처리방침</a>
-            <a class="button ghost" href="lazyparking/privacy_policy.html#items">권한 안내</a>
-          </div>
-        </article>
-
         <section class="policy-directory" aria-labelledby="policy-directory-title">
           <div class="policy-directory-head">
             <div>
@@ -129,7 +139,6 @@
             </div>
             <div class="policy-stats" aria-label="정책 앱 현황">
               <span>전체 <strong data-policy-count>2개 앱</strong></span>
-              <span>운영 중 <strong>2</strong></span>
               <span>최근 업데이트 <strong>2026.06.08</strong></span>
             </div>
           </div>
@@ -142,26 +151,17 @@
               aria-label="앱 정책 검색"
               data-policy-search
             >
-            <div class="policy-filter-group" aria-label="앱 상태 필터">
-              <button class="policy-filter is-active" type="button" data-policy-filter="all" aria-pressed="true">전체</button>
-              <button class="policy-filter" type="button" data-policy-filter="active" aria-pressed="false">운영 중</button>
-              <button class="policy-filter" type="button" data-policy-filter="records" aria-pressed="false">기록</button>
-              <button class="policy-filter" type="button" data-policy-filter="ads" aria-pressed="false">광고</button>
-            </div>
           </div>
 
           <div class="policy-app-list" aria-live="polite">
             <article
               class="policy-app-row"
               data-policy-app
-              data-status="active"
-              data-categories="records ads permissions"
               data-keywords="주차기록 주차 정보 위치 카메라 사진 갤러리 Google AdMob 광고 권한 개인정보처리방침"
             >
               <div class="policy-app-main">
                 <div class="policy-app-title-row">
                   <strong>주차기록</strong>
-                  <span class="policy-app-status">운영 중</span>
                   <span class="policy-app-category">생활 · 기록</span>
                 </div>
                 <p>주차 위치, 사진, 메모를 기록하고 다시 찾기 쉽게 돕는 앱</p>
@@ -176,14 +176,11 @@
             <article
               class="policy-app-row"
               data-policy-app
-              data-status="active"
-              data-categories="tools ads permissions terms privacy deletion"
               data-keywords="모기퇴치 고주파 음파 주파수 파형 스윕 슬립 타이머 Google AdMob 광고 권한 데이터 삭제 이용약관 개인정보 처리방침"
             >
               <div class="policy-app-main">
                 <div class="policy-app-title-row">
                   <strong>모기퇴치</strong>
-                  <span class="policy-app-status">운영 중</span>
                   <span class="policy-app-category">생활 · 도구</span>
                 </div>
                 <p>고주파 음파 재생, 프리셋, 파형 선택, 스윕 모드, 슬립 타이머를 제공하는 모기 퇴치 보조 앱</p>
@@ -229,27 +226,24 @@
   <script>
     (() => {
       const searchInput = document.querySelector("[data-policy-search]");
-      const filterButtons = Array.from(document.querySelectorAll("[data-policy-filter]"));
       const policyApps = Array.from(document.querySelectorAll("[data-policy-app]"));
       const count = document.querySelector("[data-policy-count]");
       const empty = document.querySelector("[data-policy-empty]");
 
-      if (!searchInput || !filterButtons.length || !policyApps.length || !count || !empty) {
+      if (!searchInput || !policyApps.length || !count || !empty) {
         return;
       }
 
       const normalize = (value) => value.toLocaleLowerCase("ko-KR").replace(/\s+/g, "");
 
       const filterPolicyApps = () => {
-        const activeFilter = filterButtons.find((button) => button.getAttribute("aria-pressed") === "true")?.dataset.policyFilter || "all";
         const query = normalize(searchInput.value);
         let visibleCount = 0;
 
         policyApps.forEach((app) => {
           const haystack = normalize(`${app.textContent || ""} ${app.dataset.keywords || ""}`);
-          const statusMatch = activeFilter === "all" || app.dataset.status === activeFilter || (app.dataset.categories || "").split(" ").includes(activeFilter);
           const queryMatch = !query || haystack.includes(query);
-          const visible = statusMatch && queryMatch;
+          const visible = queryMatch;
           app.hidden = !visible;
           if (visible) {
             visibleCount += 1;
@@ -259,17 +253,6 @@
         count.textContent = `${visibleCount}개 앱`;
         empty.hidden = visibleCount !== 0;
       };
-
-      filterButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          filterButtons.forEach((item) => {
-            const active = item === button;
-            item.classList.toggle("is-active", active);
-            item.setAttribute("aria-pressed", String(active));
-          });
-          filterPolicyApps();
-        });
-      });
 
       searchInput.addEventListener("input", filterPolicyApps);
       filterPolicyApps();
